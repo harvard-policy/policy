@@ -396,13 +396,14 @@ main { background: var(--stone); }
 .board-row h2, .board-row h3 { font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.75rem); margin-bottom: 4px; }
 .person { margin: 0; }
 .person-card {
-  position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; padding: 0; border: 0;
+  position: relative; display: block; width: 100%; aspect-ratio: 1 / 1; padding: 0; border: 0;
   background: var(--paper-2); cursor: pointer; overflow: hidden; text-align: left;
   container-type: inline-size;
 }
 .section--paper .person-card { background: var(--stone); }
 .person-card img {
-  position: absolute; left: 11%; top: 18.8%; width: 78%; height: auto; aspect-ratio: 1 / 1;
+  /* the photos come from the 1080px post graphics (about 290-350px across), so keep them near that size */
+  position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: min(78%, 250px); height: auto; aspect-ratio: 1 / 1;
   border-radius: 50%; object-fit: cover; transition: opacity .45s var(--ease), transform .6s var(--ease);
 }
 .person-card .bio {

@@ -258,6 +258,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 [data-team="tech"] { --team: var(--team-tech); }
 [data-team="education"] { --team: var(--team-education); }
 [data-team="economics"] { --team: var(--team-economics); }
+[data-team="program"] { --team: #8a6f4e; }
 [data-team="immigration"] { --team: var(--crimson-deep); }
 [data-team="midterms"] { --team: var(--ink); }
 
